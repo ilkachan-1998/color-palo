@@ -16,6 +16,9 @@
     background-size: contain;
     background-position: 0 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 </style>
 </head>
 <body>
@@ -43,16 +46,31 @@
             </div>
             <img src="assets/img/huellas-1.png" class="absolute w-[100px] md:w-[180px] lg:w-[250px] bottom-0 lg:bottom-[10%] right-[10%]" alt="">
         </section>
-        <section class="block">
+        <section class="block mb-[4rem]" id="servicios">
             <div class="clip-service h-[100px] bg-[#d0c7fe] block text-center text-4xl">
                 Servicios
             </div>
         </section>
-        <section class="block">
-            <div class="grid grid-cols-3 gap-5 max-w-7xl mx-auto">
-                <div>queso</div>
-                <div>ss</div>
-                <div>ss</div>
+        <section class="block text-center">
+            <div class="grid grid-cols-3 gap-5 items-center max-w-7xl mx-auto">
+                <article class="col-span-3 md:col-span-2 py-3">
+                    <h2 class="text-[2.5rem] italic">Masaje de manos</h2>
+                    <hr class="w-[4rem] mx-auto mt-2 mb-4 border-2 border-violet-300">
+                    <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, voluptatem.</p>
+                </article>
+                <div class="col-span-3 md:col-span-1">
+                    <img src="assets/img/masaje-mano.png" class="w-[300px] inline-block md:w-full" alt="">
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-span-3 md:col-span-1 row-start-4 md:row-start-[initial]">
+                    <img src="assets/img/masaje-pie.png" class="w-[300px] inline-block md:w-full" alt="">
+                </div>
+                <article class="col-span-3 md:col-span-2 py-3">
+                    <h2 class="text-[2.5rem] italic">Masaje de pies</h2>
+                    <hr class="w-[4rem] mx-auto mt-2 mb-4 border-2 border-violet-300">
+                    <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, voluptatem.</p>
+                </article>
             </div>
         </section>
     </div>
